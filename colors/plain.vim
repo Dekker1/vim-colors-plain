@@ -33,24 +33,17 @@ let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
 let s:dark_blue       = { "gui": "#008EC4", "cterm": "4"   }
 let s:light_blue      = { "gui": "#B6D6FD", "cterm": "153" }
-let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
-let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
 let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
 let s:light_green     = { "gui": "#5FD7A7", "cterm": "10"  }
-let s:dark_purple     = { "gui": "#523C79", "cterm": "5"   }
-let s:light_purple    = { "gui": "#6855DE", "cterm": "13"  }
 let s:light_yellow    = { "gui": "#F3E430", "cterm": "11"  }
 let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
 
 if &background == "dark"
   let s:bg               = s:black
   let s:bg_subtle        = s:light_black
-  let s:bg_very_subtle   = s:subtle_black
   let s:norm             = s:lighter_gray
   let s:norm_subtle      = s:light_gray
   let s:norm_very_subtle = s:medium_gray
-  let s:purple           = s:light_purple
-  let s:cyan             = s:light_cyan
   let s:green            = s:light_green
   let s:red              = s:light_red
   let s:yellow           = s:light_yellow
@@ -66,12 +59,9 @@ if &background == "dark"
 else
   let s:bg               = s:white
   let s:bg_subtle        = s:lighter_gray
-  let s:bg_very_subtle   = s:light_gray
   let s:norm             = s:light_black
   let s:norm_subtle      = s:lighter_black
   let s:norm_very_subtle = s:medium_gray
-  let s:purple           = s:dark_purple
-  let s:cyan             = s:dark_cyan
   let s:green            = s:dark_green
   let s:red              = s:dark_red
   let s:yellow           = s:dark_yellow
@@ -99,12 +89,8 @@ unlet s:dark_red
 unlet s:light_red
 unlet s:dark_blue
 unlet s:light_blue
-unlet s:dark_cyan
-unlet s:light_cyan
 unlet s:dark_green
 unlet s:light_green
-unlet s:dark_purple
-unlet s:light_purple
 unlet s:light_yellow
 unlet s:dark_yellow
 
