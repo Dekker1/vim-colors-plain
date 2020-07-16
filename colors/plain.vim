@@ -20,61 +20,37 @@ endif
 
 let g:colors_name='plain'
 
-let s:black           = { "gui": "#222222", "cterm": "0"   }
+let s:black           = { "gui": "#20232c", "cterm": "0"   }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
-let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
+let s:white           = { "gui": "#fffefe", "cterm": "15"  }
 let s:light_black     = { "gui": "#424242", "cterm": "8"   }
 let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
 let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
 let s:light_gray      = { "gui": "#999999", "cterm": "249" }
 let s:lighter_gray    = { "gui": "#CCCCCC", "cterm": "251" }
-let s:lightest_gray   = { "gui": "#E5E5E5", "cterm": "251" }
-let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
-let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
-let s:dark_blue       = { "gui": "#008EC4", "cterm": "4"   }
-let s:light_blue      = { "gui": "#B6D6FD", "cterm": "153" }
-let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
-let s:light_green     = { "gui": "#5FD7A7", "cterm": "10"  }
-let s:light_yellow    = { "gui": "#F3E430", "cterm": "11"  }
-let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
+let s:light_red       = { "gui": "#af4b57", "cterm": "1"   }
+let s:light_blue      = { "gui": "#7c8fa3", "cterm": "4" }
+let s:light_green     = { "gui": "#87b279", "cterm": "10"  }
+let s:light_yellow    = { "gui": "#e3e578", "cterm": "11"  }
+let s:dark_yellow     = { "gui": "#e5c078", "cterm": "3"   }
 
-if &background == "dark"
-  let s:bg               = s:black
-  let s:bg_subtle        = s:light_black
-  let s:norm             = s:lighter_gray
-  let s:norm_subtle      = s:light_gray
-  let s:norm_very_subtle = s:medium_gray
-  let s:green            = s:light_green
-  let s:red              = s:light_red
-  let s:yellow           = s:light_yellow
-  let s:visual           = s:lighter_black
-  let s:cursor_line      = s:subtle_black
-  let s:constant         = s:light_blue
-  let s:comment          = s:light_gray
-  let s:selection        = s:dark_yellow
-  let s:selection_fg     = s:black
-  let s:ok               = s:light_green
-  let s:warning          = s:yellow
-  let s:error            = s:light_red
-else
-  let s:bg               = s:white
-  let s:bg_subtle        = s:lighter_gray
-  let s:norm             = s:light_black
-  let s:norm_subtle      = s:lighter_black
-  let s:norm_very_subtle = s:medium_gray
-  let s:green            = s:dark_green
-  let s:red              = s:dark_red
-  let s:yellow           = s:dark_yellow
-  let s:visual           = s:light_blue
-  let s:cursor_line      = s:lightest_gray
-  let s:constant         = s:dark_blue
-  let s:comment          = s:light_gray
-  let s:selection        = s:light_yellow
-  let s:selection_fg     = s:light_black
-  let s:ok               = s:light_green
-  let s:warning          = s:yellow
-  let s:error            = s:dark_red
-endif
+let s:bg               = s:black
+let s:bg_subtle        = s:light_black
+let s:norm             = s:lighter_gray
+let s:norm_subtle      = s:light_gray
+let s:norm_very_subtle = s:medium_gray
+let s:green            = s:light_green
+let s:red              = s:light_red
+let s:yellow           = s:light_yellow
+let s:visual           = s:lighter_black
+let s:cursor_line      = s:subtle_black
+let s:constant         = s:light_blue
+let s:comment          = s:light_gray
+let s:selection        = s:dark_yellow
+let s:selection_fg     = s:black
+let s:ok               = s:light_green
+let s:warning          = s:yellow
+let s:error            = s:light_red
 
 unlet s:black
 unlet s:medium_gray
@@ -84,12 +60,8 @@ unlet s:lighter_black
 unlet s:subtle_black
 unlet s:light_gray
 unlet s:lighter_gray
-unlet s:lightest_gray
-unlet s:dark_red
 unlet s:light_red
-unlet s:dark_blue
 unlet s:light_blue
-unlet s:dark_green
 unlet s:light_green
 unlet s:light_yellow
 unlet s:dark_yellow
